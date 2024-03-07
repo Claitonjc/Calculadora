@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <main>
+        <section class="header__container">
+            <h1>Calculadora</h1>
+            <div class="header__fundo__tela">
+                <input  value="" type="text" name="display" id="display">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="main__botoes">
+            <button type="button" class="btn__ligar on" onclick="clearAll()">
+            ON
+            </button>
+            <button type="button" class="btn__operadores divisao" value="/" onclick="showDisplay('/')">/</button>
+            <button type="button" class="btn__operadores multiplicacao" value="*" onclick="showDisplay('*')">x</button>
+            <button type="button" class="btn__operadores subtracao" value="-" onclick="showDisplay('-')">-</button>
+            <button type="button" class="btn__numeros sete" value="7" onclick="showDisplay(7)">7</button>
+            <button type="button" class="btn__numeros oito" value="8" onclick="showDisplay(8)">8</button>
+            <button type="button" class="btn__numeros nove" value="9" onclick="showDisplay(9)">9</button>
+            <button type="button" class="btn__operadores adicao" value="+" onclick="showDisplay('+')">+</button>
+            <button type="button" class="btn__numeros quatro" value="4" onclick="showDisplay(4)">4</button>
+            <button type="button" class="btn__numeros cinco" value="5" onclick="showDisplay(5)">5</button>
+            <button type="button" class="btn__numeros seis" value="6" onclick="showDisplay(6)">6</button>
+            <button type="button" class="btn__numeros um" value="1" onclick="showDisplay(1)">1</button>
+            <button type="button" class="btn__numeros dois" value="2" onclick="showDisplay(2)">2</button>
+            <button type="button" class="btn__numeros tres" value="3" onclick="showDisplay(3)">3</button>
+            <button type="button" class="btn__operadores igual" value="=" onclick="result()">=</button>
+            <button type="button" class="btn__numeros zero" value="0" onclick="showDisplay(0)">0</button> 
+            <button type="button" class="btn__numeros ponto" value="." onclick="showDisplay('.')">.</button>
+        </section>
+    </main>
+
+    <script src="/assets/js/main.js"></script>
+    
+</body>
+</html>
